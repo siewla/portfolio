@@ -39,7 +39,15 @@
 
 .card {
   margin: 1rem;
-  min-height: 80vh;
+  width: 20rem;
+  min-height: 38rem;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .project-footer {

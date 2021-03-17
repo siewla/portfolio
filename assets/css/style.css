@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Jura:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 
 * {
   /* font-family: 'Michroma', sans-serif; */
@@ -19,6 +20,28 @@
 }
 
 #avatar {
-  max-height: 30vh;
+  max-height: 25vh;
   border-radius: 50%;
+}
+
+.projects-container {
+  min-height: 100vh;
+  background-color: #39c0ed;
+}
+
+.projects {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  margin: 1rem;
+  min-height: 80vh;
+}
+
+.project-footer {
+  margin: 2vh;
 }

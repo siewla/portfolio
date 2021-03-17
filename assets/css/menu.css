@@ -1,0 +1,85 @@
+:root {
+  --acolor: #39c0ed;
+  --bcolor: rgba(57, 192, 237, 0.6);
+}
+
+.floatingButtonWrap {
+  display: block;
+  position: fixed;
+  bottom: 45px;
+  right: 45px;
+  z-index: 999999999;
+}
+
+.floatingButtonInner {
+  position: relative;
+}
+
+.floatingButton {
+  display: block;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  background: white;
+  color: var(--acolor);
+  line-height: 50px;
+  position: absolute;
+  border-radius: 50% 50%;
+  bottom: 0px;
+  right: 0px;
+  border: 5px solid var(--bcolor);
+  opacity: 1;
+  transition: all 0.4s;
+}
+
+.floatingButton .fa {
+  font-size: 15px !important;
+}
+
+.floatingButton.open,
+.floatingButton:hover,
+.floatingButton:focus,
+.floatingButton:active {
+  color: var(--bcolor);
+}
+
+.floatingButton .fa {
+  transform: rotate(0deg);
+  transition: all 0.4s;
+}
+
+.floatingButton.open .fa {
+  transform: rotate(270deg);
+}
+
+.floatingMenu {
+  position: absolute;
+  bottom: 60px;
+  right: 0px;
+  display: none;
+}
+
+.floatingMenu li {
+  width: 100%;
+  float: right;
+  list-style: none;
+  text-align: right;
+  margin-bottom: 5px;
+}
+
+.floatingMenu li a {
+  padding: 8px 15px;
+  display: inline-block;
+  background: var(--acolor);
+  color: white;
+  border-radius: 5px;
+  overflow: hidden;
+  white-space: nowrap;
+  transition: all 0.4s;
+  box-shadow: 1px 3px 5px rgba(211, 224, 255, 0.5);
+}
+
+.floatingMenu li a:hover {
+  margin-right: 10px;
+  text-decoration: none;
+}
